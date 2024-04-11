@@ -10,6 +10,7 @@ This is a simple Java project.
 ## Usage
 
 - Clone the repository git cone <project link>
-- Build the project using `mvn clean packege'
-- Create Dockerfile 
+- Build the project using `mvn clean package'
+- Create Dockerfile
+- create deployment and service files
 - Run the project
