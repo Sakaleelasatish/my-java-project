@@ -5,7 +5,7 @@ This is a simple Java project.
 ## Requirements
 
 - Java 11
-- Maven 3.6.3
+- Maven 3.5.0
 
 ## Usage
 
