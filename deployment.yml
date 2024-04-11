@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-java-project-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-java-project
+  template:
+    metadata:
+      labels:
+        app: my-java-project
+    spec:
+      containers:
+      - name: my-java-project
+        image: javaprojectimg-1.0.0   # Replace this with the Docker image tag you've built
+        ports:
+        - containerPort: 8080
