@@ -35,4 +35,16 @@
     <dependencies>
         <!-- Add your dependencies here -->
     </dependencies>
+         <distributionManagement>
+   <repository>
+      <id>nexus</id>
+      <name>my_java_project-Release</name>
+      <url>http://100.25.140.113:8081/repository/my_java_project-Release/</url>
+   </repository>
+   <snapshotRepository>
+      <id>nexus</id>
+      <name>my_java_project-snapshot</name>
+      <url>http://100.25.140.113:8081/repository/my_java_project-snapshot/</url>
+    </snapshotRepository>     
+</distributionManagement>
 </project>
