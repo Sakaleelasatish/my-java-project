@@ -11,7 +11,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <sonar.host.url>http://18.207.236.198:9000</sonar.host.url>
+        <sonar.host.url>http://54.166.164.192:9000</sonar.host.url>
         <sonar.login>250c5acc7bbad8bbbb92388e2e3b32e58a5d6efd</sonar.login>   
     </properties>
 
