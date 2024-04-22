@@ -6,13 +6,12 @@
     <groupId>com.example</groupId>
     <artifactId>my-java-project</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <sonar.host.url>http://18.204.16.168:9000</sonar.host.url>
-        <sonar.login>250c5acc7bbad8bbbb92388e2e3b32e58a5d6efd</sonar.login>   
+        <sonar.host.url>http://100.25.220.128:9000</sonar.host.url>
+        <sonar.login>437ce097a020ff2be03797cfca6f399b2a883409</sonar.login>   
     </properties>
 
     <build>
