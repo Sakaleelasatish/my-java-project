@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        node('WORKER_1') // Specify the node name where you want to run the pipeline
-    }
+    agent any
    stages 
    {
       stage('checkout')
