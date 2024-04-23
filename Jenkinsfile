@@ -13,6 +13,14 @@ pipeline {
                 sh 'mvn clean deploy'
             }
         }
+          stage('SonarQube Analysis') {
+            steps {
+                // Execute SonarQube scanner
+                withSonarQubeEnv('Sonar-Server') {
+                    sh 'mvn sonar:sonar'
+                }
+            }
+        }
     }
 }
 
