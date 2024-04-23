@@ -38,12 +38,12 @@
    <repository>
       <id>nexus</id>
       <name>my_java_project-Release</name>
-      <url>http://54.196.43.80:8081/repository/my_java_project-Release/</url>
+      <url>http://54.82.175.217:8081/repository/my_java_project-Release/</url>
    </repository>
    <snapshotRepository>
       <id>nexus</id>
       <name>my_java_project-snapshot</name>
-      <url>http://54.196.43.80:8081/repository/my_java_project-snapshot/</url>
+      <url>http://54.82.175.217:8081/repository/my_java_project-snapshot/</url>
     </snapshotRepository>     
 </distributionManagement>
 </project>
