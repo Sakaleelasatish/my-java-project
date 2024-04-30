@@ -1,4 +1,4 @@
-e the official Maven image as the base image
+#use the official Maven image as the base image
 FROM maven:3.6.3-openjdk-11 AS build
 
 # Set the working directory in the container
