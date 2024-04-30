@@ -1,8 +1,5 @@
 pipeline {
     agent any
-    environment {
-        SCANNER_HOME=tool 'sonar-scanner'
-    }
     stages {
         stage('clean workspace'){
             steps{
@@ -21,17 +18,6 @@ pipeline {
                 sh 'mvn clean deploy'
             }
         }
-        /*stage('unit test') {
-            steps {
-                // Run JUnit tests
-                sh 'mvn test'
-            }
-            post {
-                always {
-                    junit '**/target/surefire-reports/*.xml'
-                }
-            }
-        }*/
         stage("build docker image") {
             steps {
                 script {
