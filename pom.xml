@@ -10,7 +10,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <sonar.host.url>http://18.117.140.200:9000/</sonar.host.url>
+        <sonar.host.url>http://18.220.48.9:9000/</sonar.host.url>
         <sonar.login>33fea60f28031c6b325404cbe81b9ba05d97aeea</sonar.login>   
     </properties>
 
@@ -38,12 +38,12 @@
    <repository>
       <id>nexus</id>
       <name>my_java_project-Release</name>
-      <url>http://54.82.175.217:8081/repository/my_java_project-Release/</url>
+      <url>http://54.172.202.6:8081/repository/my_java_project-Release/</url>
    </repository>
    <snapshotRepository>
       <id>nexus</id>
       <name>my_java_project-snapshot</name>
-      <url>http://54.82.175.217:8081/repository/my_java_project-snapshot/</url>
+      <url>http://54.172.202.6:8081/repository/my_java_project-snapshot/</url>
     </snapshotRepository>     
 </distributionManagement>
 </project>
