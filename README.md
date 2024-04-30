@@ -6,7 +6,7 @@ This is a simple Java project.
 
 - Java 11
 - Maven 3.5.0
-
+- Sonarqube 7.6
 ## Usage
 
 - Clone the repository git cone <project link>
