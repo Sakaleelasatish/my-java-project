@@ -20,7 +20,7 @@ FROM adoptopenjdk/openjdk11:alpine-jre
 WORKDIR /app
 
 # Copy the built JAR file from the build stage to the runtime environment
-COPY --from=build /app/target/my-java-project-1.1.0-SNAPSHOT.jar ./app.jar
+COPY --from=build /app/target/my-java-project-1.0.0-SNAPSHOT.jar ./app.jar
 
 # Expose the port that the application listens on
 EXPOSE 8888
