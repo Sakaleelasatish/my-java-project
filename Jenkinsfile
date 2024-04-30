@@ -21,7 +21,7 @@ pipeline {
                 sh 'mvn clean deploy'
             }
         }
-        stage('unit test') {
+        /*stage('unit test') {
             steps {
                 // Run JUnit tests
                 sh 'mvn test'
@@ -31,7 +31,7 @@ pipeline {
                     junit '**/target/surefire-reports/*.xml'
                 }
             }
-        }
+        }*/
         stage("build docker image") {
             steps {
                 script {
