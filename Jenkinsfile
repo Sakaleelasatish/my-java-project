@@ -1,13 +1,5 @@
 pipeline {
     agent any
-    environment {
-        SCANNER_HOME=tool 'sonar-scanner'
-        DOCKER_REGISTRY='docker.io'
-        DOCKER_USERNAME='sakaleelasatish'
-        DOCKER_PASSWORD='Satish@may24'
-        DOCKER_IMAGE_NAME='my-java-project-image'
-        DOCKER_IMAGE_TAG='latest'
-    }
     stages {
         stage('clean workspace') {
             steps {
@@ -25,6 +17,18 @@ pipeline {
             steps {
                 sh 'mvn clean package'
             }
+        }
+
+        stage("build docker image") {
+            steps {
+                script {
+                    // Build Docker image
+                     docker.build('my-java-project-image')
+                }
+            }
+        }
+    }
+}
         }
 
         stage("build docker image") {
