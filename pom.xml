@@ -5,17 +5,28 @@
 
     <groupId>com.example</groupId>
     <artifactId>my-java-project</artifactId>
-    <version>1.1.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <sonar.host.url>http://18.220.48.9:9000/</sonar.host.url>
-        <sonar.login>33fea60f28031c6b325404cbe81b9ba05d97aeea</sonar.login>   
+        <sonar.login>33fea60f28031c6b325404cbe81b9ba05d97aeea</sonar.login>
     </properties>
+
+    <dependencies>
+        <!-- JUnit for testing -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
+            <!-- Maven JAR Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -31,19 +42,16 @@
         </plugins>
     </build>
 
-    <dependencies>
-        <!-- Add your dependencies here -->
-    </dependencies>
-         <distributionManagement>
-   <repository>
-      <id>nexus</id>
-      <name>my_java_project-Release</name>
-      <url>http://54.172.202.6:8081/repository/my_java_project-Release/</url>
-   </repository>
-   <snapshotRepository>
-      <id>nexus</id>
-      <name>my_java_project-snapshot</name>
-      <url>http://54.172.202.6:8081/repository/my_java_project-snapshot/</url>
-    </snapshotRepository>     
-</distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>my_java_project-Release</name>
+            <url>http://54.172.202.6:8081/repository/my_java_project-Release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>my_java_project-snapshot</name>
+            <url>http://54.172.202.6:8081/repository/my_java_project-snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
