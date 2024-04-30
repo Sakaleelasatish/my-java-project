@@ -24,6 +24,7 @@ pipeline {
                 script {
                     // Build Docker image
                      docker.build('my-java-project-image')
+                     docker push sakaleelasatish/my_java_project:tagname
                 }
             }
         }
