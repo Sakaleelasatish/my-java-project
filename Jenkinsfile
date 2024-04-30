@@ -21,7 +21,7 @@ pipeline {
                 sh 'mvn clean deploy'
             }
         }
-         /*stage("Sonarqube Analysis "){
+         stage("Sonarqube Analysis "){
             steps{
                 withSonarQubeEnv('sonar-server') {
                     sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=my_java_Project \
@@ -32,10 +32,10 @@ pipeline {
         stage("quality gate"){
            steps {
                 script {
-                    waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-token' 
+                    waitForQualityGate abortPipeline: false, credentialsId:  395937d96c4a911e183fd48c2ca205b7a3d52738
                 }
             } 
-        }*/
+        }
     }
 }
 
