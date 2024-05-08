@@ -1,4 +1,4 @@
-# My Java Project
+#My Java Project
 
 This is a simple Java project.
 
@@ -6,11 +6,13 @@ This is a simple Java project.
 
 - Java 11
 - Maven 3.5.0
-
+- Sonarqube 7.6
 ## Usage
 
 - Clone the repository git cone <project link>
-- Build the project using `mvn clean package'
+- Build the project using `mvn clean deploy'
+- Deploy the package in nexus repository
 - Create Dockerfile
+
 - create deployment and service files
 - Run the project

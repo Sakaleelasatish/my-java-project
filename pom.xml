@@ -30,8 +30,7 @@
             </plugin>
         </plugins>
     </build>
-
-    <dependencies>
+   <dependencies>
         <!-- Add your dependencies here -->
     </dependencies>
          <distributionManagement>
