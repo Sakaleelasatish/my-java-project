@@ -28,5 +28,15 @@ pipeline {
                 }
             }
         }
-    }
+   
+       stage('Push Docker image') {
+            steps {
+                script {
+                    // Push Docker image to Docker Hub
+                    docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials-id') {
+                        docker.image('my-java-project-image').push('mjp-1.0.0')
+                    }
+                }
+            }
+         }
 }
